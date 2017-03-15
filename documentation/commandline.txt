@@ -1,0 +1,51 @@
+=====================
+The CViT Command Line
+=====================
+
+Usage for the CVIT script:
+  perl cvit.pl [opt] gff-file-in [gff-file-in]*
+
+  -c <file>           alternative config file (default: config/cvit.ini)
+  -o <string>         base filename (default: unique id)
+  -s '<section_option>=<value>[,<section_option>=<value>]*'
+                      conf file overrides
+  -i [png/svg]        image type (default: png)
+  -h                  display this list of options
+  
+  *Multiple gff input files make possible various layers: chromosomes, centromeres, borders, etc.
+  For example (ignore line wraps):
+  perl cvit.pl -c config/cvit_histogram.ini -o MtChrXxMtLjTEs 
+       data/MtChrs.gff data/BACborders.gff data/MtCentromeres.gff 
+       /web/medicago/htdocs/genome/upload/MtChrXxMtLjTEs.gff
+       
+  Example: override conf file settings:
+  perl cvit.pl -s 'general_title=Homeologous Chromosomes,general_scale_factor=.00003' records.gff
+  
+  The GFF data MUST contain some sequence records of type 'chromosome' or 
+  there will be no way to draw the picture.
+
+
+---------
+Examples:
+---------
+
+Show command line usage:
+  $ perl cvit.pl -h
+  $ perl cvit.pl
+
+Run cvit with one GFF file:
+  $ perl cvit.pl data.gff
+
+Run cvit with a custom .ini file:
+  $ perl cvit.pl -c conf/genetic.ini data.gff
+
+Specify base name for output files:
+  $ perl cvit.pl -o IBM2008_genetic_map data.gff
+This will create the files IBM2008_genetic_map.png, 
+IBM2008_genetic_map.legend.png, and IBM2008_genetic_map.coords.csv
+
+Run cvit with separate chromosome and feature files:
+  $ perl cvit.pl chroms.gff features.gff
+
+Override .ini files to change image title:
+  $ perl cvit.pl -s 'general_title=IBM2008 genetic map' data.gff

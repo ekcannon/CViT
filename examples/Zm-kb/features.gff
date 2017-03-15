@@ -1,0 +1,34 @@
+#unit = kbp
+# seqname source feature start end score strand frame attributes
+ZmChr1 Pchr centromere 132900 134300 . . . Name=cent1;
+ZmChr2 Pchr centromere 89500 90900 . . . Name=cent2;
+ZmChr3 Pchr centromere 94300 95300 . . . Name=cent3;
+ZmChr4 Pchr centromere 104200 105000 . . . Name=cent4;
+ZmChr5 Pchr centromere 101300 108400 . . . Name=cent5;
+ZmChr6 Pchr centromere 49800 50400 . . . Name=cent6;
+ZmChr7 Pchr centromere 55100 55500 . . . Name=cent7;
+ZmChr8 Pchr centromere 45900 47100 . . . Name=cent8;
+ZmChr9 Pchr centromere 68300 69200 . . . Name=cent9;
+ZmChr10 Pchr centromere 59300 60500 . . . Name=cent10;
+
+ZmChr1	LocusLookup	knob	12357	22800	.	.	.	Name=K1S;
+ZmChr3	LocusLookup	knob	175047	214730	.	.	.	Name=K3L;
+ZmChr5	LocusLookup	knob	157140	214524	.	.	.	Name=K5L;
+ZmChr6	LocusLookup	knob	80876	103061	.	.	.	Name=K6L1;
+ZmChr6	LocusLookup	knob	129525	143922	.	.	.	Name=K6L2;
+ZmChr6	LocusLookup	knob	110251	130194	.	.	.	Name=K6L3;
+ZmChr7	LocusLookup	knob	154513	166489	.	.	.	Name=K7L;
+ZmChr9	LocusLookup	knob	9662	23218	.	.	.	Name=K9S;
+
+ZmChr2 invented gene 154513 161434 . + . Name=geneA;class=pos;
+ZmChr2 invented gene 159313 165082 . - . Name=geneX;class=neg;
+ZmChr2 invented gene 214730 220012 . - . Name=geneB;class=neg;
+
+ZmChr5 invented point 30234 30234 . + . Name=pointA;class=pos;
+ZmChr5 invented point 54633 54633 . - . Name=pointB;class=neg;
+
+ZmChr2 BLAST hit 18766 18766 1e-30 . . Name=hit1
+ZmChr2 BLAST hit 128746 128746 1e-10 . . Name=hit2
+ZmChr2 BLAST hit 48766 48766 1e-70 . . Name=hit3
+ZmChr2 BLAST hit 200192 200192 1e-4 . . Name=hit4
+ZmChr2 BLAST hit 80192 80192 0 . . Name=hit5

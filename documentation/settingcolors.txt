@@ -1,0 +1,42 @@
+=================================
+How to set feature colors in CViT
+=================================
+
+There are many ways to set the color of a feature in CViT. The different
+methods are hierarchical, with one overriding another. The methods are
+listed below from lowest to highest hierarchy.
+
+1. The glyph section in the .ini file.
+     Set the color= option to establish a default color for all feature 
+     displayed with that glyph.
+
+2. A custom section in the .ini file.
+     Create a custom section for a particular set of features using 
+     their source and type columns (2 and 3) in the GFF file. All options
+     in the corresponding glyph section can be overridden this way, not
+     just color.
+        [genes]
+        feature = B73RefGen_v2:gene
+        color = green
+
+3. The color attribute.
+     Set a color attribute for the feature in the attributes (9) column
+     of the GFF. The color name must be found in the file rgb.txt, included
+     in the CViT download.
+        Chr1 B73RefGen_v2 gene 2345991 345119 . . . ID=some_gene;color=green
+     This will override 'color' option settings in the .ini file.
+
+4. Class colors.
+     Create classes of features and let CViT pick a different color for each
+     class from the class_colors list set in the .ini file. The colors will be
+     taken in order from the list so it is wise to choose distinctively 
+     different colors for the first colors. The color names must be found in
+     the file rgb.txt. Assign a feature to a class using the attributes (9)
+     column in the GFF file.
+        Chr1 B73RefGen_v2 gene 2345991 345119 . . . ID=some_gene;class=gene
+
+5. Specific class colors.
+     Create classes of features and set specific colors for each class in the
+     [classes] section of the GFF file.
+        [classes]
+        gene=green

@@ -1,0 +1,143 @@
+=======================
+Preparing data for CViT
+=======================
+
+Definitions:
+  chromosome: a "backbone". Could be a psuedomolecule, linkage group, contig,
+              et cetera.
+
+
+Input data to CViT is in GFF3 (http://www.sequenceontology.org/gff3.shtml).
+CViT interpretes files as follows:
+  column 1 (seqid)      - chromosome name. If column 3 is 'chromosome' the 
+                          record describes the chromosome (name, length, et 
+                          cetera), otherwise the record describes a feature on 
+                          the named chromosome.
+  column 2 (source)     - user defined. Can be used in conjunction with column 3
+                          by the options (.ini) file to indicate a special 
+                          glyph.
+  column 3 (type)       - one of: 'chromosome', 'position', 'range', 'border', 
+                          'measure', 'centromere', 'marker' or user defined. 
+                          Can be used in conjunction with column 3.
+                          by the options (.ini) file to indicate a special 
+                          glyph.
+  column 4 (start)      - start coordinate of chromosome if column 3 = 
+                          'chromosome', start coordinate of feature otherwise.
+  column 5 (end)        - end coordinate of chromosome if column 3 = 
+                         'chromosome', end coordinate of featuer otherwise.
+  column 6 (score)      - if record is of type 'measure' and 'value_type' 
+                          parameter in options (.ini) file is set to 
+                          'score_col', then this value will be used to generate 
+                          a heatmap color or histogram.
+  column 8 (strand)     - Unused unless 'show_strands' parameter in options 
+                          (.ini) file is set to 1.
+  column 8 (phase)      - UNUSED
+  column 9 (attributes) - User-defined attributes allowed and ignored by CViT. 
+                          These attributes are defined:
+                          ID/Name = name of chromosome or feature
+                          color   = color for feature; overrides all other color
+                                    settings in options (.ini) file
+                          value   = used for type=measure glyphs if 'value_type'
+                                    parameter in options is set to 'value_attr'
+
+The GFF data must contain at least one chromosome. Features must contain the 
+name of the chromosome it belongs to in the seqid (1) column of the GFF file
+and that name must match the name in the seqid column for the chromosome. Also,
+its coordinates must lie within the start and end coordinates of the chromosome.
+
+
+=======
+HOW-TOs
+=======
+
+I. Show BLAST hits
+------------------
+   1. Create chromosome records for target. (One per chromosome or other
+      sequence fragment/assembly.)
+   2. Execute BLAST with output type set to table (-m 8 for BLAST, -format=list)
+   3. Convert output to BLAST hits using the helper script blast_to_gff.pl.
+   4. Modify the options (.ini) file if need be.
+   5. Execute CViT with chromosome records, BLAST GFF, and modified .ini file.
+      For example:
+        perl cvit.pl -c conf/modified.ini chroms.gff blasthits.gff
+   
+   
+Ia. Show BLAST hit strength
+   1. In step 4 above, indicate that BLAST hits should be displayed as measures
+      by adding a custom section. For example:
+      [hits]
+      feature    = BLAST:hit   (where column 2 = 'BLAST' and column 3 = 'hit')
+      glype      = measure
+      value_type = score_col
+      display    = heat
+
+
+II. Show cytologically-mapped loci
+   1. Create GFF records for chromosomes and loci.
+   2. GFF records for loci should set column 3 (type) to 'position' or the start
+      and end coordinates should be the same.
+   3. Set 'shape' option in .ini file to 'doublecircle'
+   4. Execute CViT with chromosome and loci records, and modified .ini file.
+      For example:
+        perl cvit.pl -c conf/modified.ini records.gff
+   
+   
+III. Show repeat densities on psuedomolecules
+   1. Create chromosome records for psuedomolecules.
+   2. Calculate repeat densities as values per some distance along the 
+      psuedomolecules.
+   3. Create GFF records for each distance that look like:
+        <chrom name> <source> measure <start> <end> . . . value=<density>
+   4. Modify .ini file and make sure the 'value_type' option is set to 
+     'value_attr'.
+   5. Execute CViT. For example:
+        perl cvit.pl -c conf/modified.ini chroms.gff density.gff
+
+
+IV. Show different classes of features in different colors
+   1. Assign each class of feature a different name in the attributes column:
+        class=<class>
+      For example, to color each BLAST query a different color:
+        class=<query id>
+   2. Check colors in 'class_colors' parameter in the .ini file.
+   3. Execute cvit.pl
+   NOTE: Colors are assigned to each class in order of appearance. Because GFF
+   records are sorted by chromosome and start location before the glyps are 
+   assigned colors and painted on the image, the colors assigned to each class
+   may be different that expected.
+
+
+IVa. Show different classes of features in specified colors
+   1. Assign each class of feature a different name in the attributes column:
+        class=<class>
+      For example, to color each BLAST query a different color:
+        class=<query id>
+   2. Create an entry in the [classes] section of the .ini file for each class:
+        <class-name>=<color>
+   3. Execute cvit.pl
+
+
+V. Wrap CViT inside web pages
+   (See CViT-BLAST and CViT-web for examples)
+
+   Communication between CViT and web pages is enabled through the .coords.csv 
+   file which lists the coordinates of each feature in the image. This enables 
+   you to create an imagemap to identify individual features on the image, 
+   attaching links and/or javascript. This file contains 9 columns:
+      feature name
+      chromosome name
+      GFF start
+      GFF end
+      image x1
+      image y1
+      image x2
+      image y2
+      GFF attributes
+      
+      
+Va. Pass custom attributes to web implementations
+   If you have custom attributes which are not interpreted by CViT but which
+   you wish to interpret in your web pages, they will be passed to the web page
+   scripts via column 9 of the .coords.csv file.
+
+   

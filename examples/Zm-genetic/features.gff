@@ -1,0 +1,50 @@
+# seqname source feature start end score strand frame attributes
+zmChr1 IBM2_2008_Neighbors locus 2.5 2.5 . . . ID=tub1
+zmChr1 IBM2_2008_Neighbors locus 24 24 . . . ID=spr1;color=red
+zmChr1 IBM2_2008_Neighbors locus 66.9 66.9 . . . ID=asg31;color=LawnGreen
+zmChr1 IBM2_2008_Neighbors locus 96.0 96.0 . . . ID=amyb2;color=tomato
+zmChr1 IBM2_2008_Neighbors locus 147.4 147.4 . . . ID=lox9;color=darkgreen
+zmChr1 IBM2_2008_Neighbors locus 190.4 190.4 . . . ID=zmm14;color=chocolate
+zmChr1 IBM2_2008_Neighbors locus 230.12 230.12 . . . ID=sig2B
+zmChr1 IBM2_2008_Neighbors locus 337.5 337.5 . . . ID=sod4;color=red
+zmChr1 IBM2_2008_Neighbors locus 405 405 . . . ID=mlo2
+zmChr1 IBM2_2008_Neighbors centromere 439.30 439.30 . . . ID=
+zmChr1 IBM2_2008_Neighbors locus 457 457 . . . ID=rs2
+zmChr1 IBM2_2008_Neighbors locus 607 607 . . . ID=sodh1;color=red
+zmChr1 IBM2_2008_Neighbors locus 701 701 . . . ID=nip3a
+zmChr1 IBM2_2008_Neighbors locus 882.70 882.70 . . . Name=tb1;color=darkgreen
+zmChr1 IBM2_2008_Neighbors locus 951 951 . . . ID=lem1;color=blue
+zmChr1 IBM2_2008_Neighbors locus 1121 1121 . . . ID=tufm1
+
+zmChr2 IBM2_2008_Neighbors locus 4 4 . . . ID=mlo9;color=blue
+ZmChr2 IBM2_2008_Neighbors locus 46.98 46.98 . . . Name=lg1;color=green
+zmChr2 IBM2_2008_Neighbors locus 148 148 . . . ID=aox2;color=red
+zmChr2 IBM2_2008_Neighbors locus 250.8 250.8 . . . ID=grx1;color=blue
+zmChr2 IBM2_2008_Neighbors locus 304 304 . . . ID=opr5
+ZmChr2 IBM2_2008_Neighbors centromere 344.80 344.80 . . . ID=
+ZmChr2 IBM2_2008_Neighbors locus 374 374 . . . ID=dia1
+ZmChr2 IBM2_2008_Neighbors locus 432 432 . . . ID=dbf3;color=red
+ZmChr2 IBM2_2008_Neighbors locus 498 498 . . . ID=tua5;color=blue
+ZmChr2 IBM2_2008_Neighbors locus 575 575 . . . ID=apx2
+ZmChr2 IBM2_2008_Neighbors locus 657 657 . . . ID=pex1;color=chartreuse
+
+ZmChr3 IBM2_2008_Neighbors locus 2 2 . . . ID=g2;color=chartreuse
+ZmChr3 IBM2_2008_Neighbors locus 44 44 . . . ID=e8
+ZmChr3 IBM2_2008_Neighbors locus 232.6 232.6 . . . ID=lg3
+ZmChr3 IBM2_2008_Neighbors centromere 254.00 254.00 . . . ID=
+ZmChr3 IBM2_2008_Neighbors locus 288.9 288.9 . . . ID=rp3;color=red
+ZmChr3 IBM2_2008_Neighbors locus 340 340 . . . ID=vp1;color=chartreuse
+ZmChr3 IBM2_2008_Neighbors locus 413 413 . . . ID=lg2
+ZmChr3 IBM2_2008_Neighbors locus 580 580 . . . ID=y10
+ZmChr3 IBM2_2008_Neighbors locus 699.2 699.2 . . . ID=a1
+
+ZmChr4 IBM2_2008_Neighbors centromere 298.90 298.90 . . . ID=
+ZmChr5 IBM2_2008_Neighbors centromere 313.34 313.34 . . . ID=
+ZmChr6 IBM2_2008_Neighbors centromere 98.00 98.00 . . . ID=
+ZmChr6 IBM2_2008_Neighbors locus 536.50 536.50 . . . Name=tie-dyed1;color=red
+ZmChr7 IBM2_2008_Neighbors centromere 184.10 184.10 . . . ID=
+ZmChr8 IBM2_2008_Neighbors centromere 207.90 207.90 . . . ID=
+ZmChr9 IBM2_2008_Neighbors centromere 224.70 224.70 . . . ID=
+ZmChr9 IBM2_2008_Neighbors locus 90.10 90.10 . . . Name=bronze1;color=chocolate
+ZmChr9 IBM2_2008_Neighbors locus 191.70 191.70 . . . Name=waxy1;color=orange
+ZmChr10 IBM2_2008_Neighbors centromere 191.40 191.40 . . . ID=

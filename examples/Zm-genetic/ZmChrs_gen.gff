@@ -1,0 +1,11 @@
+# seqname source feature start end score strand frame attributes
+ZmChr1 IBM2_2008_Neighbors chromosome -144 1310.63 . . . ID=Chr1
+ZmChr2 IBM2_2008_Neighbors chromosome -47 761.30 . . . ID=Chr2
+ZmChr3 IBM2_2008_Neighbors chromosome -40 986.00 . . . ID=Chr3
+ZmChr4 IBM2_2008_Neighbors chromosome -149 804.83 . . . ID=Chr4
+ZmChr5 IBM2_2008_Neighbors chromosome -43 696.00 . . . ID=Chr5
+ZmChr6 IBM2_2008_Neighbors chromosome -136 683.13 . . . ID=Chr6
+ZmChr7 IBM2_2008_Neighbors chromosome -43 684.30 . . . ID=Chr7
+ZmChr8 IBM2_2008_Neighbors chromosome -43 895.00 . . . ID=Chr8
+ZmChr9 IBM2_2008_Neighbors chromosome -54 692 . . . ID=Chr9
+ZmChr10 IBM2_2008_Neighbors chromosome -43 740 . . . ID=Chr10

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<svg height="171" width="321" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<rect height="171" id="1-0-0" style="fill: rgb(255,255,255); fill-opacity: 1.0; stroke: rgb(255,255,255); stroke-opacity: 1.0; stroke-width: 1" width="321" x="0" y="0" />
+	<rect height="170" id="2-0-0" style="fill: none; fill-opacity: 1.0; stroke: rgb(0,0,0); stroke-opacity: 1.0; stroke-width: 1" width="320" x="0" y="0" />
+	<text fill="rgb(0,0,0)" font="Helvetica" font-size="13" font-weight="bold" id="3-5-15" x="5" y="26">Legend
+	</text>
+	<text fill="rgb(153,153,153)" font="Helvetica" font-size="13" font-weight="bold" id="4-5-34" x="5" y="45">cM
+	</text>
+	<line id="5-5-50" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="5" y1="50" y2="150" />
+	<line id="6-5-50" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="13" y1="50" y2="50" />
+	<line id="7-5-50" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="50" y2="50" />
+	<line id="8-5-60" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="60" y2="60" />
+	<line id="9-5-70" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="70" y2="70" />
+	<text fill="rgb(153,153,153)" font="Helvetica" font-size="13" font-weight="bold" id="10-21-43.5" x="21" y="54.5">1
+	</text>
+	<line id="11-5-70" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="13" y1="70" y2="70" />
+	<line id="12-5-70" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="70" y2="70" />
+	<line id="13-5-80" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="80" y2="80" />
+	<line id="14-5-90" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="90" y2="90" />
+	<text fill="rgb(153,153,153)" font="Helvetica" font-size="13" font-weight="bold" id="15-21-63.5" x="21" y="74.5">50
+	</text>
+	<line id="16-5-90" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="13" y1="90" y2="90" />
+	<line id="17-5-90" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="90" y2="90" />
+	<line id="18-5-100" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="100" y2="100" />
+	<line id="19-5-110" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="110" y2="110" />
+	<text fill="rgb(153,153,153)" font="Helvetica" font-size="13" font-weight="bold" id="20-21-83.5" x="21" y="94.5">100
+	</text>
+	<line id="21-5-110" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="13" y1="110" y2="110" />
+	<line id="22-5-110" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="110" y2="110" />
+	<line id="23-5-120" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="120" y2="120" />
+	<line id="24-5-130" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="130" y2="130" />
+	<text fill="rgb(153,153,153)" font="Helvetica" font-size="13" font-weight="bold" id="25-21-103.5" x="21" y="114.5">150
+	</text>
+	<line id="26-5-130" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="13" y1="130" y2="130" />
+	<line id="27-5-130" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="130" y2="130" />
+	<line id="28-5-140" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="9" y1="140" y2="140" />
+	<text fill="rgb(153,153,153)" font="Helvetica" font-size="13" font-weight="bold" id="29-21-123.5" x="21" y="134.5">200
+	</text>
+	<line id="30-5-150" style="fill: rgb(153,153,153); fill-opacity: 1.0; stroke: rgb(153,153,153); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="5" x2="13" y1="150" y2="150" />
+	<text fill="rgb(153,153,153)" font="Helvetica" font-size="13" font-weight="bold" id="31-21-143.5" x="21" y="154.5">250
+	</text>
+	<rect height="101" id="32-234-50" style="fill: rgb(179,179,179); fill-opacity: 1.0; stroke: rgb(179,179,179); stroke-opacity: 1.0; stroke-width: 1" width="5" x="234" y="50" />
+	<rect height="101" id="33-234-50" style="fill: none; fill-opacity: 1.0; stroke: rgb(102,102,102); stroke-opacity: 1.0; stroke-width: 1" width="5" x="234" y="50" />
+	<text fill="rgb(51,51,51)" font="Helvetica" font-size="13" font-weight="bold" id="34-227.5-30" x="227.5" y="41">chr
+	</text>
+	<line id="35-227-75" style="fill: rgb(0,255,0); fill-opacity: 1.0; stroke: rgb(0,255,0); stroke-opacity: 1.0; stroke-width: 1; stroke-linecap: square" x1="227" x2="232" y1="75" y2="75" />
+	<text fill="rgb(0,0,0)" font="Helvetica" font-size="13" font-weight="bold" id="36-72-69" x="72" y="80">IBM2_2008_Neighbors locus
+	</text>
+	<rect height="12" id="37-232-125" style="fill: rgb(0,0,0); fill-opacity: 1.0; stroke: rgb(0,0,0); stroke-opacity: 1.0; stroke-width: 1" width="9" x="232" y="125" />
+	<text fill="rgb(77,77,77)" font="Helvetica" font-size="11" font-weight="normal" id="38-245-120" x="245" y="129">centromere
+	</text><!-- 
+	Generated using the Perl SVG Module V2.33
+	by Ronan Oger
+	Info: http://www.roasp.com/
+ -->
+</svg>

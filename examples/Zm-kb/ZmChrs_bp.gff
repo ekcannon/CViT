@@ -1,0 +1,12 @@
+#chr lengths in kbs
+# seqname source feature start end score strand frame attributes
+ZmChr1 Pchr chromosome 1 300239 . . . ID=
+ZmChr2 Pchr chromosome 1 234753 . . . ID=
+ZmChr3 Pchr chromosome 1 230558 . . . ID=
+ZmChr4 Pchr chromosome 1 247096 . . . ID=
+ZmChr5 Pchr chromosome 1 216916 . . . ID=
+ZmChr6 Pchr chromosome 1 169254 . . . ID=
+ZmChr7 Pchr chromosome 1 170974 . . . ID=
+ZmChr8 Pchr chromosome 1 174515 . . . ID=
+ZmChr9 Pchr chromosome 1 152350 . . . ID=
+ZmChr10 Pchr chromosome 1 149686 . . . ID=
