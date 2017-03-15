@@ -31,6 +31,8 @@ See the ini file, config/cvit.ini.
 
 Note that all names, types, and attributes in the GFF are case-sensitive.
 
+**Cite CViT:** doi: [10.1155/2011/373875](http://dx.doi.org/10.1155/2011/373875)
+
 **A Javascript version of CViT is available [here](https://github.com/LegumeFederation/cvitjs).**
 
 
