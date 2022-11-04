@@ -58,7 +58,6 @@ use File::Spec;
 
 # standard libs
 use IO::File;
-use POSIX qw(tmpnam);
 use Getopt::Std;
 use Getopt::Long;
 use FindBin '$Bin';
