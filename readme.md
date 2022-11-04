@@ -36,7 +36,6 @@ Note that all names, types, and attributes in the GFF are case-sensitive.
 **A Javascript version of CViT is available [here](https://github.com/LegumeFederation/cvitjs).**
 
 
-
 Requirements:
 -------------
 Perl 5.8.8+
@@ -52,6 +51,23 @@ Perl libraries:
   + SVG
   + Config::IniFiles
   + Data::Dumper
+
+
+Installation:
+-------------
+Installation basically involves installing the required C libraries (libgd), followed by the Perl libraries. Below are two options for accomplishing this; other routes are possible, depending on your environment.
+
+Option 1, suitable for installation on macOS. This employs HomeBrew to do the initial installation of C libraries and perl (for integration of CPAN), followed by HomeBrew's CPAN for installing the perl libraries:
+    brew install libgd
+    brew install perl
+    brew install pkg-config
+
+    cpan install GD::SVG GD::Arrow GD::Text
+
+Option 2, suitable for Unix/Linux environments where the conda package manager is available:
+    conda create -c conda-forge -c bioconda -n cvit perl-gd-svg
+    source activate cvit
+    cpan install Config::IniFiles GD::Arrow GD::Text
 
 
 Files:
