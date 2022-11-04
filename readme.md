@@ -63,7 +63,7 @@ Installation basically involves installing the required C libraries (libgd), fol
     source activate cvit
     cpan install Config::IniFiles GD::Arrow GD::Text
 
-**Option 2**, suitable for installation on macOS. This employs HomeBrew to do the initial installation of C libraries and perl (for integration of CPAN), followed by HomeBrew's CPAN for installing the perl libraries:
+**Option 2**, suitable for installation on macOS and Linux. This employs HomeBrew to do the initial installation of C libraries and perl (for integration of CPAN), followed by HomeBrew's CPAN for installing the perl libraries:
 
     brew install libgd
     brew install perl
