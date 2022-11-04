@@ -61,14 +61,24 @@ Installation basically involves installing the required C libraries (libgd), fol
 
     conda create -c conda-forge -c bioconda -n cvit perl-gd-svg
     source activate cvit
+
     cpan install Config::IniFiles GD::Arrow GD::Text
+
+    git clone https://github.com/ekcannon/CViT.git
+    cd CViT
+    [Prepare your data and cvit.ini, then call ./cvit.pl with suitable arguments]
 
 **Option 2**, suitable for installation on macOS and Linux. This employs HomeBrew to do the initial installation of C libraries and perl (for integration of CPAN), followed by HomeBrew's CPAN for installing the perl libraries:
 
     brew install libgd
     brew install perl
     brew install pkg-config
+
     cpan install GD::SVG GD::Arrow GD::Text
+
+    git clone https://github.com/ekcannon/CViT.git
+    cd CViT
+    [Prepare your data and cvit.ini, then call ./cvit.pl with suitable arguments]
 
 
 Files:
