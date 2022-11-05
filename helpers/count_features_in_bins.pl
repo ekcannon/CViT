@@ -2,6 +2,7 @@
 use strict;
 use warnings;
 use Getopt::Long;
+use Scalar::Util qw(looks_like_number);
 
 my $usage = <<EOS;
   Synopsis: zcat SNP_FILE(s) | count_features_in_bins.pl -bin BINSIZE [options]
@@ -62,9 +63,8 @@ while (<>) {
 
   my @fields = split /\t/;
 
-  if ($fields[$coord_col] !~ /^\d+/) { # likely header
-    next;
-  }
+  # skip likely header rows
+  next unless (exists($fields[$coord_col]) && looks_like_number($fields[$coord_col]) );
 
   if ($cur_chr eq '') { $cur_chr = $fields[$seqid_col]; }
 
@@ -113,4 +113,4 @@ __END__
 # This variant is a little more general, but is tailored to output of MUMmer show-snps.
 # S. Cannon
 # 2022-10-31 New script, deriving from binCounter.pl
-# 2022-11-05 Set default column indices to -seqid 1 -coord 2 ; and add -source, -type
+# 2022-11-05 Set default column indices to -seqid 1 -coord 2 ; and add -source, -type; add Scalar::Util
