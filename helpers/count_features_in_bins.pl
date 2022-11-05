@@ -46,22 +46,27 @@ GetOptions (
 
 die $usage if ($help || not defined($bin_size));
 
-$coord_col--;
 $seqid_col--;
-if ($coord_col<0 || $seqid_col<0){ 
-  die "Parameters coord_col and seqid_col must be 1 or greater. Column indices are one-indexed.\n";
+$coord_col--;
+if ( $seqid_col<0 || $coord_col<0 ){ 
+  die "Parameters seqid_col and coord_col must be 1 or greater. Column indices are one-indexed.\n";
 }
 
 my $cur_chr   = '';
 my ($bin_count, $bin_start, $counter) = (0, 0, 0);
 my $bin_end   = $bin_size;
 
+my $OUTFH;
+if ($outfile){
+  open ($OUTFH, ">", $outfile) or die "Can't open out $outfile:$!\n";
+}
+
 # Read coordinate data on STDIN
 while (<>) {
   chomp;
   next if /^\s*$/;
 
-  my @fields = split /\t/;
+  my @fields = split /\s+/;
 
   # skip likely header rows
   next unless (exists($fields[$coord_col]) && looks_like_number($fields[$coord_col]) );
@@ -74,13 +79,12 @@ while (<>) {
   }
   else {
     do {
-       if ($bin_count > 0) {
-         # Print cummulative GFF record
+       if ($bin_count > 0) { # Print cummulative GFF record
          my $attrs = "value=$bin_count;ID=$counter";
-         my @rec = ($cur_chr, $source, $type, $bin_start, $bin_end, '.', '.', '.', 
-                    $attrs);
+         my @rec = ($cur_chr, $source, $type, $bin_start, $bin_end, '.', '.', '.', $attrs);
          my $rec_str = join "\t", @rec;
-         print "$rec_str\n";
+         if ($outfile){ print $OUTFH "$rec_str\n" }
+         else { print "$rec_str\n" }
        }
 
        $bin_start = $bin_end;
